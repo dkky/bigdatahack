@@ -10,9 +10,10 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
 
     if @review.save
-      # @user = User.find(params[:user_id].to_i)
-      # @review.update(user_id: params[:user_id].to_i)
-      # redirect_to @user
+      @user = User.find(params[:user_id].to_i)
+      @review.update(user_id: params[:user_id].to_i, facility_id: params[:facility_id])
+      @facility = @review.facility
+      redirect_to @facility
     else
       render 'new'
     end

@@ -23,17 +23,33 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# for styling
+gem 'bootstrap-sass', '~> 3.3.6'
+# Use font-awesome-rails for styling
+gem 'font-awesome-rails'
+# Use Chosen to select from large list
+gem 'chosen-rails'
+
+#for user management
 gem 'devise'
 
+#for search engine
 gem 'pg_search'
 
+#for geocoding
 gem 'geocoder'
-
 gem 'gmaps4rails'
 
 gem 'gon', '~> 6.1'
 
+#for star rating
 gem 'ratyrate'
+
+# a charting library for Ruby on Rails 
+# https://richonrails.com/articles/charting-with-chartkick
+gem 'chartkick'
+gem 'groupdate'
+gem 'active_median'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

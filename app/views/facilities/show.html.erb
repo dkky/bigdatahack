@@ -17,6 +17,8 @@
           <%= form.label :"Comments" %>
           <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
         </div>
+        <%= hidden_field_tag(:user_id, @user.id)%>
+
         <%= form.submit "Submit Review", class: "btn btn-primary" %>
 
         <% end %>
@@ -30,4 +32,24 @@
           });
 
         </script>
+
+      <br><br><strong><p>Reviews from patients:</p></strong>
+      <% @user.reviews.order('created_at DESC').each do |review| %>
+        <div class="container"><br>
+          <div class="rate-result">
+            <div id="stars_<%= review.id %>"></div>
+              <strong>Event Title: </strong> <%= review.event_title %>
+              <p><em>Reviewed By:<%= @user.first_name %></em></p> 
+              <h4><em>"<%= review.comment %>"</em><h4>
+          </div>
+        </div>
+        
+        <script>
+          $('#stars_<%= review.id %>').raty({
+            path: '/assets',
+            readOnly: true,
+            score: <%= review.score %>
+          });
+        </script>
+      <% end %>
 </div>

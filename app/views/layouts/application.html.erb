@@ -32,6 +32,7 @@
                           <li><a href="/profiles/new">Create Your Profile</a></li>
                           <li><a href="#">Setting</a></li>
                           <li><a href="/trendings">Trending Now</a></li>
+                          <li><%= link_to "User Profile", user_path(current_user) %></li>
                           <li>
                             <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => "page-scroll" %>
                           </li>

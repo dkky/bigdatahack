@@ -1,0 +1,98 @@
+id,state,name,address,city,website,email,tel,fax,image,latitude,longitude,likes,rating,status
+1,Johor,"Klinik Kesihatan, Jalan Abdul Samad"," Jalan Abdul Samad,80100 Johor Bahru, Johor",Johor Bahru,,,07-2228015,07-2246014,,0,0,0,0,NEW
+2,Johor,Hospital Sultanah Aminah,"80100 Johor Bahru , Johor",Johor Bahru,,,07-2246812,,,0,0,0,0,NEW
+3,Johor,Hospital Sultan Ismail,"Jalan Persiaran Mutiara Emas Utama, Taman Mount Austin, 81100 Johor Bahru Johor",Johor Bahru,,,07-3565000,,,0,0,0,0,NEW
+4,Johor,Klinik Kesihatan Pasir Gudang,"81700 Johor Bahru, Johor",Johor Bahru,,,07-2510594,,,0,0,0,0,NEW
+5,Johor,Klinik Pergigian Masai,"Jalan Sekolah, 81750 Johor Bahru, Johor",Johor Bahru,,,07-2510764,,,0,0,0,0,NEW
+6,Johor,Klinik Kesihatan Tebrau,"Taman Seri Tebrau,80950 Johor Bahru, Johor",Johor Bahru,,,07-3342305,,,0,0,0,0,NEW
+7,Johor,Klinik Kesihatan Tampoi,"Tampoi, 81200 Johor Bahru, Johor",Johor Bahru,,,07-2384415,,,0,0,0,0,NEW
+8,Johor,Klinik Kesihatan Larkin,"Johor Bahru, 80950 Johor",Johor Bahru,,,07-2233249,,,0,0,0,0,NEW
+9,Johor,Klinik Kesihatan Klinik Pesakit Luar Johor Bahru,"Jalan Mahmoodiah, 80100 Johor Bahru, Johor",Johor Bahru,,,07-2266166,,,0,0,0,0,NEW
+10,Johor,Klinik Kesihatan Sultan Ismail Johor Bahru,"Taman Mount Austin, 81100 Johor Bahru, Johor",Johor Bahru,,,07-73577131,,,0,0,0,0,NEW
+11,Johor,Klinik Pergigian Taman Tun Aminah,"Taman Tun Aminah, 81300 Johor Bahru, Johor",Johor Bahru,,,07-5560685,,,0,0,0,0,NEW
+12,Johor,Klinik Kesihatan Kempas,"Kempas,81200 Johor Bahru Johor",Johor Bahru,,,07-2382060,,,0,0,0,0,NEW
+13,Johor,Klinik Kesihatan Taman Universiti,"Taman Universiti, 81300 Johor Bahru, Johor",Johor Bahru,,,07-5216809,,,0,0,0,0,NEW
+14,Johor,Klinik Kesihatan Ulu Tiram,"Ulu Tiram, 81800 Johor Bahru, Johor",Johor Bahru,,,07-8611902,,,0,0,0,0,NEW
+15,Johor,Klinik Kesihatan Majidee,"Kampong Majidee Johor Bahru,80950 Johor",Johor Bahru,,,07-3324139,,,0,0,0,0,NEW
+16,Johor,Klinik Kesihatan Gelang Patah,"kampong gelang Patah,81550 Johor",Gelang Patah,,,07-5101252,,,0,0,0,0,NEW
+17,Johor,Klinik Pergigian Sekolah kanak-Kanak Spastik,"138 Jln. Dato' Menteri , 8100 Johor Bahru, Johor",Johor Bahru,,,07-2235452,,,0,0,0,0,NEW
+18,Johor,Hospital Pakar  Sultanah Fatimah Muar,"Jalan Salleh, 84000 Muar, Johor",Muar,,,06-9521901,06-9526430,,0,0,0,0,NEW
+19,Johor,Klinik Pergigian Pakar Ortodontik,"Jalan Mariam, 84000 Muar, Johor",Muar,,,06-9534629,06-9534629,,0,0,0,0,NEW
+20,Johor,Klinik Kesihatan Bandar Maharani,"Jalan Salleh, 84000 Muar, Johor",Muar,,,06-9539704,06-9539719,,0,0,0,0,NEW
+21,Johor,Klinik Kesihatan Parit Jawa,84160 Muar Johor,Muar,,,06-9874755,06-9874755,,0,0,0,0,NEW
+22,Johor,Klinik Kesihatan Bukit Pasir,"Bukit Pasir 84300 Muar, Johor",Muar,,,06-9850049,,,0,0,0,0,NEW
+23,Johor,Klinik Kesihatan Lenga,"Lenga 84040 Muar, Johor",Muar,,,06-9711445,,,0,0,0,0,NEW
+24,Johor,Klinik Kesihatan Pagoh,"Jalan Muar-Pagoh, Pagoh 84000 Muar, Johor",Muar,,,06-9746270,,,0,0,0,0,NEW
+25,Johor,Klinik Kesihatan Bakri,"Bakri 84000 Muar, Johor",Muar,,,06-9867007,,,0,0,0,0,NEW
+26,Johor,Klinik Kesihatan Kampong Kenangan Tun Dr Ismail, Muar Johor,Muar,,,06-9523563,,,0,0,0,0,NEW
+27,Johor,Klinik Kesihatan Parit Yusof,"Parit Yusof 84000 Muar, Johor",Muar,,,07-4161277,,,0,0,0,0,NEW
+28,Johor,Klinik Kesihatan Parit Bakar,"Parit Bakar 84000 Muar, Johor",Muar,,,06-9811324,,,0,0,0,0,NEW
+29,Johor,Klinik Kesihatan Sri Menanti Muar,84000 Muar Johor,Muar,,,06-9881059,,,0,0,0,0,NEW
+30,Johor,Klinik Kesihatan Bt.15 Air Itam Muar,84000 Muar Johor,Muar,,,07-4212512,,,0,0,0,0,NEW
+31,Johor,Hospital Sultanah Nora Ismail,"Batu Pahat, 83000 Batu Pahat Johor",Batu Pahat,,,07-4341999,07-4322544,,0,0,0,0,NEW
+32,Johor,Klinik Kesihatan Batu Pahat,"Jalan Kluang,83000 Batu Pahat, Johor",Batu Pahat,,,07-4341619,07-4311997,,0,0,0,0,NEW
+33,Johor,Klinik Kesihatan Ayer Hitam,"Jalan Air Hitam, 86100 Batu Pahat Johor",Batu Pahat,,,07-4341649,,,0,0,0,0,NEW
+34,Johor,Klinik Kesihatan Yong Peng,"Yong Peng  83700 Batu Pahat, Johor",Batu Pahat,,,07-4681372,,,0,0,0,0,NEW
+35,Johor,Klinik Kesihatan Parit Raja,"Jalan Ayer Hitam, 86400 Parit Raja, Batu Pahat Johor",Batu Pahat,,,07-4543423,,,0,0,0,0,NEW
+36,Johor,Klinik Kesihatan Tongkang Pechah,"Tongkang Pechah 83000 Batu Pahat, Johor",Batu Pahat,,,07-4156175,,,0,0,0,0,NEW
+37,Johor,Klinik Kesihatan Rengit,"83100 Rengit Batu Pahat, Johor",Batu Pahat,,,07-4245792,,,0,0,0,0,NEW
+38,Johor,Klinik Kesihatan Sri Medan,83400 Seri Medan Batu Pahat. Johor,Batu Pahat,,,07-4858953,,,0,0,0,0,NEW
+39,Johor,Klinik Kesihatan Semerah,"Jalan Batu Pahat-Muar, 83600 Semerah Batu Pahat Johor",Batu Pahat,,,07-4162685,,,0,0,0,0,NEW
+40,Johor,Klinik Kesihatan Parit Sulong,"83500 Parit Sulong Batu Pahat, Johor",Batu Pahat,,,07-4186204,,,0,0,0,0,NEW
+41,Johor,Klinik Kesihatan Parit Yaani,Parit Yaani 83710 Batu Pahat Johor,Batu Pahat,,,07-4846521,,,0,0,0,0,NEW
+42,Johor,Klinik Kesihatan Sri Gading,"kampong Sri Gading 83300 Batu Pahat, Johor",Batu Pahat,,,07-4558216,,,0,0,0,0,NEW
+43,Johor,Klinik Kesihatan Bagan,"Kampong Bagan 83000 Batu Pahat, Johor ",Batu Pahat,,,07-4138107,,,0,0,0,0,NEW
+44,Johor,Klinik Kesihatan Senggarang,Senggarang 83200 Batu Pahat Johor,Batu Pahat,,,07-4291015,,,0,0,0,0,NEW
+45,Johor,Klinik Kesihatan Sri Merlong,"Parit Sri Merlong, 83100 Batu Pahat Johor",Batu Pahat,,,07-4258511,,,0,0,0,0,NEW
+46,Johor,Hospital Enche' Besar Hajah Khalsom,"Kluang, KM 5 Jalan kota Tinggi 86000 Kluang Johor",Kluang,,,07-7787000,,,0,0,0,0,NEW
+47,Johor,Klinik Pergigian Kluang,"Jalan Hospital, 86000 Kluang, Johor",Kluang,,,07-7721655,07-7731335,,0,0,0,0,NEW
+48,Johor,Klinik Kesihatan Simpang Renggam,"86200 Kluang, Johor",Kluang,,,07-7558646,,,0,0,0,0,NEW
+49,Johor,Klinik Kesihatan Paloh,"86600 Kluang, Johor",Kluang,,,07-7813678,,,0,0,0,0,NEW
+50,Johor,Klinik Kesihatan Renggam,86300 Kluang  Johor,Kluang,,,07-7536396,,,0,0,0,0,NEW
+51,Johor,Klinik Kesihatan Mengkibol,"Jalan Mengkibol, 86000 Kluang Johor",Kluang,,,07-7766997,,,0,0,0,0,NEW
+52,Johor,Klinik Kesihatan Kahang,"Bt 22 Kahang,86000 Kluang   Johor",Kluang,,,07-7881229,,,0,0,0,0,NEW
+53,Johor,Klinik Kesihatan Layang-Layang,86000 Kluang Johor,Kluang,,,07-7527233,,,0,0,0,0,NEW
+54,Johor,Klinik Kesihatan Kahang Timur,86000 Kluang Johor,Kluang,,,07-7866633,,,0,0,0,0,NEW
+55,Johor,Klinik Kesihatan Ulu Belitong,"Ulu Belitong, Kluang",Kluang,,,07-7881229,,,0,0,0,0,NEW
+56,Johor,Hospital Segamat, 85000 Segamat Johor,Segamat,,,07-9433333,07-9434641,,0,0,0,0,NEW
+57,Johor,Klinik Kesihatan Segamat,"Jalan Muar, 85000 Segamat Johor",Segamat,,,07-9323135,07-9321967,,0,0,0,0,NEW
+58,Johor,Klinik Kesihatan Komuniti Bandar Putra,"Bandar Putra, 85000 Segamat Johor",Segamat,,,07-9431353,07-9431353,,0,0,0,0,NEW
+59,Johor,Klinik Kesihatan Labis,85300 Segamat Johor,Segamat,,,07-9252324,,,0,0,0,0,NEW
+60,Johor,Klinik Kesihatan Pekan Air Panas,"Pekan Air Panas,85300 Segamat Johor",Segamat,,,07-9267006,,,0,0,0,0,NEW
+61,Johor,Klinik Kesihatan Batu Anam,85100 Segamat   Johor,Segamat,,,07-9499249,,,0,0,0,0,NEW
+62,Johor,Klinik Kesihatan Buloh Kasap,"Buloh Kasap, 85000 Segamat Johor",Segamat,,,07-9441241,,,0,0,0,0,NEW
+63,Johor,Klinik Kesihatan Chaah,"Pekan Chaah, 85400 Segamat Johor",Segamat,,,07-9261236,,,0,0,0,0,NEW
+64,Johor,Klinik Kesihatan Bekok,"Pekan Bekok, 86500 Segamat Johor",Segamat,,,07-9221241,,,0,0,0,0,NEW
+65,Johor,Klinik Kesihatan Jementah,"Pekan Jementah,Jementah 85200 Segamat Johor",Segamat,,,07-9471321,,,0,0,0,0,NEW
+66,Johor,Klinik Kesihatan Pemanis,Pemanis Segamat,Segamat,,,07-9456673,,,0,0,0,0,NEW
+67,Johor,Hospital Pontian,82000 Pontian Johor,Pontian,,,07-6876450,07-6861105,,0,0,0,0,NEW
+68,Johor,Klinik  Kesihatan  Pontian,"Jalan Alsagoff, 82100 Pontian Johor",Pontian,,,07-6869066,,,0,0,0,0,NEW
+69,Johor,Klinik Kesihatan Ayer Baloi,821000 Pontian Johor,Pontian,,,07-932445,,,0,0,0,0,NEW
+70,Johor,Klinik Kesihatan Pekan Nenas,Pekan Nenas 85100 Pontian Johor,Pontian,,,07-6994352,,,0,0,0,0,NEW
+71,Johor,Klinik Kesihatan Serkat,"Serkat 82300 Pontian, Johor",Pontian,,,07-6961799,,,0,0,0,0,NEW
+72,Johor,Klinik Kesihatan Benut,Benut 82200 Pontian Johor,Pontian,,,07-6906455,,,0,0,0,0,NEW
+73,Johor,Klinik Kesihatan Kayu Ara Pasong,Kampong Kayu Ara Pasong 82010 Pontian Johor,Pontian,,,07-6951355,,,0,0,0,0,NEW
+74,Johor,Klinik Kesihatan Parit Ismail,Jalan Parit Ismail 82200 Pontian Johor,Pontian,,,07-6903571,,,0,0,0,0,NEW
+75,Johor,Klinik Kesihatan Penerok,Kampong Penerok 82300 Pontian Johor,Pontian,,,07-6961951,,,0,0,0,0,NEW
+76,Johor,Klinik Pergigian Kota Tinggi,"Jalan Tun Habab, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8831320,07-8838064,,0,0,0,0,NEW
+77,Johor,Klinik  Kesihatan Bandar Tenggara,"Bandar Tenggara, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8961341,,,0,0,0,0,NEW
+78,Johor,Klinik Kesihatan Bandar Mas,"Bandar Mas, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8236190,,,0,0,0,0,NEW
+79,Johor,Klinik Kesihatan Sening,"Felda Sening, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8277398,,,0,0,0,0,NEW
+80,Johor,Klinik Kesihatan Sungai Rengit,"Sungai Rengit,81900 Kota Tinggi , Johor",Kota Tinggi,,,07-8263285,,,0,0,0,0,NEW
+81,Johor,Klinik Kesihatan Bukit Besar,"Felda Bukit Besar, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8977255,,,0,0,0,0,NEW
+82,Johor,Klinik Kesihatan Tanjong Sedili,"Tanjong Sedili, 81900 Kota Tinggi Johor Johor",Kota Tinggi,,,07-8918370,,,0,0,0,0,NEW
+83,Johor,Klinik Kesihatan  Bukit Waha,"Felda Bukit Waha, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8925595,,,0,0,0,0,NEW
+84,Johor,Klinik Kesihatan Lok Heng,"Felda Lok Heng, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8947455,,,0,0,0,0,NEW
+85,Johor,Klinik Kesihatan Air Tawar 2,"Felda Air Tawar 2, 81900 Kota Tinggi Johor",Kota Tinggi,,,07-8932207,,,0,0,0,0,NEW
+86,Johor,Hospital Daerah Mersing,86390 Mersing Johor,Mersing,,,07-7991671,07-7991922,,0,0,0,0,NEW
+87,Johor,Klinik  Kesihatan Endau,Endau Mersing,Mersing,,,07-7942485,,,0,0,0,0,NEW
+88,Johor,Klinik Kesihatan Tenglu,Tenglu 86800 Mersing Johor,Mersing,,,07-7991276,,,0,0,0,0,NEW
+89,Johor,Klinik Kesihatan  Mersing Kanan, 86390 Mersing Johor,Mersing,,,07-7991671,,,0,0,0,0,NEW
+90,Johor,Klinik Kesihatan Jemaluang,86800 Mersing Johor,Mersing,,,07-7921271,,,0,0,0,0,NEW
+91,Johor,Klinik Kesihatan Tenggaroh,d/a FELDA Tenggaroh 86800  Mersing  Johor,Mersing,,,07-7911164,,,0,0,0,0,NEW
+92,Johor,Klinik Kesihatan Kulai Besar,81000 Kulaijaya Johor,Kulaijaya,,,07-6626852,07-6634719,,0,0,0,0,NEW
+93,Johor,Klinik Kesihatan Sagil,Sagil 84900 Ledang Johor,Ledang,,,06-9772244,,,0,0,0,0,NEW
+94,Johor,Klinik KesihatanBukit Gambir,"84000 Ledang, Johor",Ledang,,,06-9762549,,,0,0,0,0,NEW
+95,Johor,Klinik Kesihatan Paya Emas,Paya Emas Bukut Serampang 86900 Ledang Johor,Ledang,,,06-9781861,,,0,0,0,0,NEW
+96,Johor,Klinik Kesihatan Bukit Serampang, Bukit Serampang 86900 Ledang Johor,Ledang,,,06-9776961,,,0,0,0,0,NEW
+97,Johor,Klinik Kesihatan Gersik,"Gersik 84800 Ledang, Johor",Ledang,,,06-9728780,,,0,0,0,0,NEW

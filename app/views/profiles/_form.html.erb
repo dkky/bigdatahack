@@ -1,0 +1,30 @@
+
+  <div class="form-group">
+      <%= form.label :gender, "Your Gender"%>
+      <%= form.select :gender, options_for_select([ "Male", "Female", "Undefined"], 1), class: "form-control" %>
+  </div>
+
+
+  <div class="form-group">
+      <%= form.label :blood_type, "Blood Type"%>
+      <%= form.select :blood_type, options_for_select([ "A", "B", "O"], 1), class: "form-control" %>
+  </div>
+
+
+
+  <div class="form-group">
+      <%= form.label :height %>
+      <%= form.text_field :height, placeholder: "Enter Height", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+      <%= form.label :weight %>
+      <%= form.text_field :weight, placeholder: "Enter Weight", class: "form-control" %>
+  </div
+
+
+  <div class="form-group">
+      <%= form.label  :facilities_visited %>
+      <%= form.text_field  :facilities_visited, placeholder: "Your visit to this hospital/clinic", class: "form-control" %>
+  </div
+ 

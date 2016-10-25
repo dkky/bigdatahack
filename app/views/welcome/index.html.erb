@@ -1,0 +1,23 @@
+
+
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= form_tag search_index_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], :class => "search-box" %>
+    <%= submit_tag "Search This Site", name: nil, :class => "btn btn-search" %>
+<% end %>
+
+<div style='width: 800px;'>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
+<script type="text/javascript">
+	handler = Gmaps.build('Google');
+	handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+	  markers = handler.addMarkers(<%=raw @hash.to_json %>)
+	  handler.bounds.extendWith(markers);
+	  handler.fitMapToBounds();
+	  handler.getMap().setZoom(10);
+	});	
+</script>

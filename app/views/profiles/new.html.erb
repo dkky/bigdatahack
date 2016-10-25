@@ -1,0 +1,13 @@
+
+<div>
+  <div class="container">
+    <h3>Create Your Profile</h3>
+  	<%= form_for @profile do |form| %>
+  	    <%= render partial: '/profiles/form', object: form %>
+  	    <br>
+  	    <div class="submit-field">
+  	      <%= form.submit "Create your event", class: "btn btn-default"%>
+  	    </div>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+
+  <section class="result_page">
+	<% @facility.each do |facility| %>
+      <div>
+	      <div class="col-md-6" id="facility_<%= facility.id %>">
+
+	      <h4>
+	        <%= link_to facility.name, controller: "facilities", action: "show", id: facility.id%>
+	      </h4>
+	      <p> Type: <strong> #unknown </strong></p>
+	      <p> Location: <strong><%= facility.street %></strong></p>
+	      <hr>
+
+	      </div>
+      </div>
+    <% end %>
+  </section>
+
+  <section class="result_page_map">
+    <div class="r_map" id="multi_markers" style='width: 800px; height: 400px;'></div>
+  </section>
+
+
+
+<script type="text/javascript">
+handler = Gmaps.build('Google');
+handler.buildMap({ provider: {}, internal: {id: 'multi_markers'}}, function(){
+
+  markers = handler.addMarkers(<%=raw @hash.to_json %>);
+
+  _.each(<%=raw @hash.to_json %>, function(json, index){
+    json.marker = markers[index];
+    $("#facility_" + json.id).on('mouseover', function() {
+      handler.getMap().setZoom(10);
+      json.marker.setMap(handler.getMap());
+      json.marker.panTo();
+      google.maps.event.trigger(json.marker.getServiceObject(), 'click');
+    });
+    });
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+});
+
+</script>

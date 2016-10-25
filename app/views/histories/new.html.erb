@@ -1,0 +1,13 @@
+
+<div>
+  <div class="container">
+    <h3>Create Your History</h3>
+  	<%= form_for @history do |form| %>
+  	    <%= render partial: '/histories/form', object: form %>
+  	    <br>
+  	    <div class="submit-field">
+  	      <%= form.submit "Create your event", class: "btn btn-default"%>
+  	    </div>
+      <% end %>
+  </div>
+</div>

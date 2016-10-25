@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font_awesome";
+@import "chosen";
+
+.spacer {
+	padding: 150px;
+}

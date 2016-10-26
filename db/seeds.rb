@@ -34,8 +34,4 @@ History.create(user_id: 2, blood_sugar_fasting: 4.7, blood_sugar_after_meal: 6.2
 History.create(user_id: 2, blood_sugar_fasting: 6.2, blood_sugar_after_meal: 9.9, systolic_blood_pressure: 120.0, diastolic_blood_pressure: 70.0, pulse_rate: 80.0, created_at: DateTime.now + 9.day)
 
 
-puts "Seeding facilities"
-
-
-
 puts "Seeding done!"

@@ -35,6 +35,14 @@
  			  			<p><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> &nbsp; mummyglo@healthie.com </p>
  			  			<p><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> &nbsp; 36 </p>
               <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong> &nbsp; Cheras, Malaysia </p>
+
+              <div class = "row"></div>
+
+              <h6 class="profile-title"><strong>Recent Searches:</strong></h6> 
+              <span class="label label-default tags fa fa-tag">glucose level</span> 
+              <span class="label label-default tags fa fa-tag">nadi</span> 
+              <span class="label label-default tags fa fa-tag">gynae</span> 
+
             </div>
 
             <!-- 4/12 width2 -->
@@ -68,30 +76,36 @@
 		  <div class="panel panel-default">
 		  	<div class="panel-body">
 			  	<div class="row">
-  					charts
+  				  
+            <div class = "col-sm-6">
+              chart 1
+              <%= line_chart @histories.map { |history|
+                {name: history.name, data: history.pulse_rate.group_by_day(:created_at)}
+              } %>
+            </div>
+
+            <div class = "col-sm-6">
+              chart 2 
+            </div>
+
+
   				</div>
   			</div>
   		</div>
   	</div>
   </div>
 
-	<div class="row">
+<!-- 	<div class="row">
 		<div class="col-md-12">
 	  	<div class="panel panel-default">
 	  		<div class="panel-body">
 		  		<div class="row">
-		  			  <p class="profile-tags-area fa fa-search">
-              Recent Searches: <br>
-              <span class="label label-default tags fa fa-tag">glucose level</span> 
-              <span class="label label-default tags fa fa-tag">nadi</span> 
-              <span class="label label-default tags fa fa-tag">endocrinologist</span> 
-              <span class="label label-default tags fa fa-tag">diabetes</span>
-              <span class="label label-default tags fa fa-tag">insulin</span>
+          Upcoming Appointments | Past Appointments
   				</div>
   			</div>
   		</div>
   	</div>
-  </div>
+  </div> -->
 
 
 </div><!-- div class container -->

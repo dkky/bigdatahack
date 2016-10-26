@@ -1,23 +1,32 @@
-<div class="spacer">
-	This is for trending!
+<div class="trend-spacer">
+	<h4>Top 5 Trends</h4>
 
   <section class="#">
-    <div class="trending_map" id="trends" style='width: 800px; height: 400px;'></div>
+    <div class="trending_map" id="trends" style='width: auto; height: 400px;'></div>
   </section>
 
 
 
   <section class="#">
 	<% @trending.each do |trending| %>
-      <div>
-	      <div class="col-md-6" id="trending_<%= trending.id %>">
-
+      <div class="row" id="trending_<%= trending.id %>">
+      	<div class="col-md-1 trend-img">
+	      	<img src="/assets/<%="#{trending.id}"%>.png" />
+	    </div>
+	      <div class="col-md-6" id="trend-headline">
 	      <h4>
+
 	        <%= link_to trending.headline, controller: "trendings", action: "show", id: trending.id%>
 	      </h4>
 	      <p> Details: <strong><%= trending.details %></strong></p>
 	      <hr>
 
+	      </div>
+	      <div class="col-md-3" id="trend-stats-time">
+	      	<% if trending.stats.present? %>
+			    <p><i class="fa fa-bar-chart" aria-hidden="true"></i> Up by <strong><%= trending.stats %></strong> cases </p> 
+			<% end %>
+	      		<p><i class="fa fa-clock-o" aria-hidden="true"></i> Updated since <strong><%= trending.time %></strong> minutes ago </p>
 	      </div>
       </div>
     <% end %>
@@ -33,7 +42,7 @@
 	  _.each(<%=raw @hash.to_json %>, function(json, index){
 	    json.marker = markers[index];
 	    $("#trending_" + json.id).on('mouseover', function() {
-	      handler.getMap().setZoom(10);
+	      handler.getMap().setZoom(13);
 	      json.marker.setMap(handler.getMap());
 	      json.marker.panTo();
 	      google.maps.event.trigger(json.marker.getServiceObject(), 'click');

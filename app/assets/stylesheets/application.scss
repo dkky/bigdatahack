@@ -63,4 +63,38 @@ $light-grey: #f4f4f4;
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;}
+<<<<<<< HEAD
 }
+=======
+}
+
+@media (min-width: 768px) {
+	.navbar-brand img {
+		height:75px;
+		width:130px;
+		margin-top:5px;
+		margin-left: -100px;
+	}
+}
+
+.navbar-brand img {
+	height:75px;
+	width:130px;
+	margin-top:5px;
+	margin-left: -50px;
+}
+
+.navbar-right {
+    margin-right: -50px;
+}
+
+
+
+
+$theme-pink: #ff5ab3;
+$theme-purple: #EE82EE;
+$theme-blue: #2980BB;
+$light-grey: #f4f4f4;
+$navbar-blue: #337ab7;
+
+>>>>>>> 36643bcdb30859d78005391f260ccec1143bd7e3

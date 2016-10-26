@@ -1,1 +1,145 @@
-user profile
+<div class="spacer"></div>
+
+<div class="container">
+  <% if current_user %>
+    <h3 class="profile-title">My Profile</h3>
+    <h6><%= @user.name %><i><%= link_to 'Edit Profile', edit_user_registration_path %></i></h6>
+  <% else %>
+    <h3>@user.name's Profile</h3>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="row">
+	<div class="col-md-12">
+	  <div class="panel panel-default">
+	  	<div class="panel-body">
+		  <div class="row">
+            
+	        <!-- 4/12 width: -->
+	        <div class="col-xs-12 col-sm-4 text-center">
+	          <img src="/assets/profile_pic.jpg", alt="profile-picture", class="center-block img-circle img-responsive" height="150px", width="150px">
+
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              <span class="profile-font-head"> 473</span>
+              <span class="profile-font-head">
+              Reputation Pts
+              </span>
+              <h6 class="profile-font-light"><i>Member since Oct 2016</i></h6>
+              <h5 class="profile-font-light">Description</h5>
+            </div>
+            
+            <!-- 4/12 width1: -->
+            <div class="col-xs-12 col-sm-4">
+              <p class="profile-font-body"><strong><i class="fa fa-venus" aria-hidden="true"></i></strong> Female </p>
+ 			  <p class="profile-font-body"><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> grandmum@healthie.com </p>
+ 			  			<p class="profile-font-body"><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> 27 Oct 1945</p>
+              <p class="profile-font-body"><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong> Cyberjaya, Malaysia </p>
+            </div>
+
+
+
+            <!-- 4/12 width2 -->
+            <div class="col-xs-12 col-sm-4">
+              <p class="profile-tags-area fa fa-search">
+              Recent Searchs: <br>
+              <span class="label label-default tags fa fa-tag">Kidney Failure</span> 
+              <span class="label label-default tags fa fa-tag">Dialysis</span> 
+              <span class="label label-default tags fa fa-tag">Hypertension</span> 
+              <span class="label label-default tags fa fa-tag">High Blood Pressure</span> 
+              <span class="label label-default tags fa fa-tag">diabetes</span>
+              <span class="label label-default tags fa fa-tag">Insulin</span>
+              <span class="label label-default tags fa fa-tag">osteoporosis</span>
+              
+              
+              
+
+              </p>
+
+              
+            </div>
+            
+
+                        
+      	  </div><!--/row-->
+        </div><!--/panel-body-->
+      </div><!--/panel panel-default-->
+
+
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="col-lg-12 content-box">
+			<div class="row row-featured">
+			<div style="clear: both"></div>
+			<div class=" relative  content  clearfix">
+			<div class="tab-lite">
+			 
+			<ul role="tablist" class="nav nav-tabs ">
+			
+			<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="tab1" href="#tab1" aria-expanded="true"><i class="icon-location-2"></i>Activities Joined</a></li>
+
+			<li role="presentation" class=""><a data-toggle="tab" role="tab" aria-controls="tab2" href="#tab2" aria-expanded="false"><i class="icon-commerical-building"></i>Activities Hosted</a></li>
+			
+			</ul>
+			 
+
+
+			<div role="tabpanel" class="tab-pane" id="tab1">
+			<div class="col-lg-12 tab-inner">
+			<div class="row">
+
+			<div class="col-md-2">
+				<div class="left-date-bar">
+					<ul class="detail-box">
+						<li class="active"><a href="#">Oct 2016</a></li>
+						<li><a href="#">Nov 2016</a></li>
+						<li><a href="#">Dec 2016</a></li>
+					</ul>
+				</div>
+			  </div>
+			
+			  <div class="col-md-10">
+				<ul class="detail-box"> 
+					
+				</ul>
+			  </div>
+
+			</div>
+			</div>
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="tab2">
+			<div class="col-lg-12 tab-inner">
+			<div class="row">
+			  
+			  <div class="col-md-2">
+				<div class="left-date-bar">
+					<ul class="detail-box">
+						<li class="active"><a href="#">Oct 2016</a></li>
+						<li><a href="#">Nov 2016</a></li>
+						<li><a href="#">Dec 2016</a></li>
+					</ul>
+				</div>
+			  </div>
+			
+			  <div class="col-md-10">
+				<ul class="detail-box">
+					
+				  </ul>
+			  </div>
+
+
+
+			</div>
+			</div>
+			</div>
+
+			</div> <!-- tab content -->
+
+			</div>
+			</div>
+			</div>
+			</div>
+	</div>
+	</div>
+</div>

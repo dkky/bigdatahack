@@ -1,34 +1,98 @@
+<div class="facility-spacer container">
+		<h3 class = "profile-name"><%= @facility.name %></h3>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+          <div class="panel-body">
+	          <div class="row">
+
+		            <!-- 4/12 width: -->
+		            <div class="col-xs-12 col-sm-4 text-center">
+		                   <div class="panel-spacer"></div>
+		              <img src="/assets/hospital-putrajaya.jpg", alt="profile-picture", class=""  height="200px", width="230px">
+		            </div>
+	           </div><!--/row-->
+		              <div class="star-centre">
+			              <img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><h3 class="star-centre-word"> 4.0 </h3>
+		              </div>
+          </div><!--/panel-body-->
+      </div><!--/panel panel-default-->
+     </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="panel-spacer"></div>
+                <h3 class ="profile-title"><strong>About Me</strong></h3>
+                <hr>
+                <br>
+                <div class="panel-spacer"></div>
+	              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong>&nbsp; <%= @facility.street %></p><br>
+              <p><strong><i class="fa fa-phone" aria-hidden="true"></i></i></strong>&nbsp; <%= @facility.telephone %></p><br>
+                           <p><strong><i class="fa fa-globe" aria-hidden="true"></i></i></strong> &nbsp; <%= @facility.website %></p><br>
+                           <p><strong><i class="fa fa-bed" aria-hidden="true"></i></strong> &nbsp; 10/360 beds available </p><br>
+            </div>
+			<div class="col-xs-12 col-sm-3 review-form">
+				<div class="panel panel-default">
+			        <div class="panel-heading"> Have you been here before?</div>
+				      <div class="panel-body">
+    
+					        <%= form_for @review, :html => {:id => "review_form"} do |form| %>
+					        <div class="text-field">
+					          <%= form.label :"Hospital's Name" %>
+					          <%= form.text_field :facility_name, type: 'text', :required => true, class: 'form-control' %>
+					          <%= form.label :"Doctor's Name" %>
+					          <%= form.text_field :doctor_name, type: 'text', :required => true, class: 'form-control' %>
+					        </div>
+
+					        <div id="user_stars"></div>
+
+					        <div class="text-field">
+					          <%= form.label :"Comments" %>
+					          <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
+					        </div>
+					        <%= hidden_field_tag(:facility_id, @facility.id)%>
+					        <%= hidden_field_tag(:user_id, current_user.id)%>
+
+
+
+					        <%= form.submit "Submit Review", class: "btn btn-primary" %>
+
+					        <% end %>
+					   </div>
+			        </div>
+		    </div>
+	    </div><!-- div class col-md-12-->
+    </div><!-- div class row -->
+    <div class="row">
+	  <div class="col-md-1"></div>
+  	        <div class="col-xs-12 col-sm-3" >
+			    <div class="map-style" id="map" style='width: 250px; height: 250px;'></div>
+			</div>
+			 <div class="col-xs-12 col-sm-5 service-div">
+			 	<p><strong><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp; Specialty:</strong> </p><br>
+			 	<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Endocrine surgery</p><br>
+			 	<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Argon and YAG laser</p><br>
+				<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Audiometry testing</p>
+			</div>
+
+
+
+            <!-- 4/12 width1: -->
+
+            <!-- 4/12 width2 -->
+    </div>                        
+
+
+
 <div class="container spacer">	
-	<div>
-			<%= @facility.name %>
-			<%= @facility.street %>
-	</div>
-
 	<div class="container">
-
-	        <%= form_for @review, :html => {:id => "review_form"} do |form| %>
-	        <div class="text-field">
-	          <%= form.label :"Hospital's Name" %>
-	          <%= form.text_field :facility_name, type: 'text', :required => true, class: 'form-control' %>
-	          <%= form.label :"Doctor's Name" %>
-	          <%= form.text_field :doctor_name, type: 'text', :required => true, class: 'form-control' %>
-	        </div>
-
-	        <div id="user_stars"></div>
-
-	        <div class="text-field">
-	          <%= form.label :"Comments" %>
-	          <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
-	        </div>
-	        <%= hidden_field_tag(:facility_id, @facility.id)%>
-	        <%= hidden_field_tag(:user_id, current_user.id)%>
-
-
-
-	        <%= form.submit "Submit Review", class: "btn btn-primary" %>
-
-	        <% end %>
-
+		<script type="text/javascript">
+			handler = Gmaps.build('Google');
+			handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+			  markers = handler.addMarkers(<%=raw @hash.to_json %>)
+			  handler.bounds.extendWith(markers);
+			  handler.fitMapToBounds();
+			  handler.getMap().setZoom(10);
+			});	
+		</script>
 
 	        <script>
 	          $('#user_stars').raty({
@@ -39,14 +103,14 @@
 
 	        </script>
 
-	      <br><br><strong><p>Reviews from patients:</p></strong>
+	      <br><br><strong><h4>Reviews from patients:</h4></strong>
 	      <% @facility.reviews.order('created_at DESC').each do |review| %>
 	        <div class="container"><br>
 	          <div class="rate-result">
-	            <div id="stars_<%= review.id %>"></div>
-	              <strong>Doctor: </strong> <%= review.doctor_name %>
-	              <strong>Hospital: </strong> <%= review.facility_name %>
-	              <p><em>Reviewed By:<%= review.user.name %></em></p> 
+	            <div id="stars_<%= review.id %>"></div><br>
+	              <strong>Hospital: </strong> <%= review.facility_name %><br>
+	              <strong>Doctor: </strong> <%= review.doctor_name %><br>
+	              <p>Reviewed By: <%= review.user.name %></p> 
 	              <h4><em>"<%= review.comment %>"</em><h4>
 	          </div>
 	        </div>
@@ -61,3 +125,5 @@
 	      <% end %>
 	</div>
 </div>
+
+

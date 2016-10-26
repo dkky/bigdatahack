@@ -17,8 +17,6 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-/*@import "font-awesome";
-*/
 @import "chosen";
 
 $theme-pink: #ff5ab3;
@@ -37,10 +35,11 @@ $navbar-blue: #337ab7;
 
 .awesome-icon {
   font-family: FontAwesome;
+  
 }
 
 .dropdown-design {
-    padding-top: 30px;
+    padding-top: 26.5px;
     padding-left: 30px;
 }
 
@@ -75,12 +74,26 @@ $navbar-blue: #337ab7;
 }
 
 .navbar-brand img {
-	height:75px;
+	height:60px;
 	width:130px;
 	margin-top:5px;
 	margin-left: -50px;
+	opacity: 0.9;
 }
 
 .navbar-right {
     margin-right: -50px;
 }
+
+#mainNav {
+	font-size: 18px;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+
+
+

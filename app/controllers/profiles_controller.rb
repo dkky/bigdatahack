@@ -4,7 +4,12 @@ class ProfilesController < ApplicationController
 	end
 
 	def create
-		@profile = current_user.new(profiles_params)
+		@profile = current_user.profiles.new(profiles_params)
+		if @profile.save 
+			redirect_to user_path(current_user)
+		else
+			render :new
+		end
 	end
 
 	private

@@ -1,61 +1,63 @@
-<div>
-		<%= @facility.name %>
-		<%= @facility.street %>
-</div>
+<div class="container spacer">	
+	<div>
+			<%= @facility.name %>
+			<%= @facility.street %>
+	</div>
 
-<div class="container">
+	<div class="container">
 
-        <%= form_for @review, :html => {:id => "review_form"} do |form| %>
-        <div class="text-field">
-          <%= form.label :"Hospital's Name" %>
-          <%= form.text_field :facility_name, type: 'text', :required => true, class: 'form-control' %>
-          <%= form.label :"Doctor's Name" %>
-          <%= form.text_field :doctor_name, type: 'text', :required => true, class: 'form-control' %>
-        </div>
+	        <%= form_for @review, :html => {:id => "review_form"} do |form| %>
+	        <div class="text-field">
+	          <%= form.label :"Hospital's Name" %>
+	          <%= form.text_field :facility_name, type: 'text', :required => true, class: 'form-control' %>
+	          <%= form.label :"Doctor's Name" %>
+	          <%= form.text_field :doctor_name, type: 'text', :required => true, class: 'form-control' %>
+	        </div>
 
-        <div id="user_stars"></div>
+	        <div id="user_stars"></div>
 
-        <div class="text-field">
-          <%= form.label :"Comments" %>
-          <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
-        </div>
-        <%= hidden_field_tag(:facility_id, @facility.id)%>
-        <%= hidden_field_tag(:user_id, current_user.id)%>
-
-
-
-        <%= form.submit "Submit Review", class: "btn btn-primary" %>
-
-        <% end %>
+	        <div class="text-field">
+	          <%= form.label :"Comments" %>
+	          <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
+	        </div>
+	        <%= hidden_field_tag(:facility_id, @facility.id)%>
+	        <%= hidden_field_tag(:user_id, current_user.id)%>
 
 
-        <script>
-          $('#user_stars').raty({
-            path: '/assets',
-            scoreName: 'review[score]',
-            score: 1
-          });
 
-        </script>
+	        <%= form.submit "Submit Review", class: "btn btn-primary" %>
 
-      <br><br><strong><p>Reviews from patients:</p></strong>
-      <% @facility.reviews.order('created_at DESC').each do |review| %>
-        <div class="container"><br>
-          <div class="rate-result">
-            <div id="stars_<%= review.id %>"></div>
-              <strong>Doctor: </strong> <%= review.doctor_name %>
-              <strong>Hospital: </strong> <%= review.facility_name %>
-              <p><em>Reviewed By:<%= review.user.name %></em></p> 
-              <h4><em>"<%= review.comment %>"</em><h4>
-          </div>
-        </div>
-        
-        <script>
-          $('#stars_<%= review.id %>').raty({
-            path: '/assets',
-            readOnly: true,
-            score: <%= review.score %>
-          });
-        </script>
-      <% end %>
+	        <% end %>
+
+
+	        <script>
+	          $('#user_stars').raty({
+	            path: '/assets',
+	            scoreName: 'review[score]',
+	            score: 1
+	          });
+
+	        </script>
+
+	      <br><br><strong><p>Reviews from patients:</p></strong>
+	      <% @facility.reviews.order('created_at DESC').each do |review| %>
+	        <div class="container"><br>
+	          <div class="rate-result">
+	            <div id="stars_<%= review.id %>"></div>
+	              <strong>Doctor: </strong> <%= review.doctor_name %>
+	              <strong>Hospital: </strong> <%= review.facility_name %>
+	              <p><em>Reviewed By:<%= review.user.name %></em></p> 
+	              <h4><em>"<%= review.comment %>"</em><h4>
+	          </div>
+	        </div>
+	        
+	        <script>
+	          $('#stars_<%= review.id %>').raty({
+	            path: '/assets',
+	            readOnly: true,
+	            score: <%= review.score %>
+	          });
+	        </script>
+	      <% end %>
+	</div>
 </div>

@@ -1,3 +1,91 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home-filter-wrapper--bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 33.75em;
+    padding: 5em 0;
+}
+    
+.temp {
+	background-image: url(assets/images/home-bg.png);
+}
+
+.content-box--lg {
+    width: 39.0625em;
+    margin: auto;
+}
+.content-box__space--xxl {
+    padding: 2.5em 6.25em;
+}
+.content-box {
+    box-shadow: 0 0 .9375em rgba(0,0,0,.3);
+    background-color: #fff;
+}
+
+.home-search {
+	cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+    width: 100%;
+    background-color: #f05450;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.words-action {
+  text-align: center;
+}
+
+.join-now {
+	color: #f05450;
+}
+
+input#query{
+    font-family: FontAwesome;
+}
+
+.featured-type {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.img-settings {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.featured-image {
+    opacity: 0.8;
+}
+
+.featured-text {
+    color: white;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 50px;
+    width: 100%
+}
+
+.featured-image:hover{
+    opacity: 0.5; 
+    
+    .featured-overlay {
+        position: absolute;
+        top: 0; right: 0;
+        bottom: 0; left: 0;
+        width: 290px;
+        height: 200px; 
+        background-color: rgba(0,0,0,0.8);
+        -webkit-transition: opacity 0.6s;
+        -moz-transition: opacity 0.6s;
+        transition: opacity 0.6s;
+       line-height:200px;   
+    }
+}

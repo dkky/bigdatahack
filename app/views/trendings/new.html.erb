@@ -1,0 +1,12 @@
+<div class="spacer">
+  <div class="container">
+    <h3>Create Trending </h3>
+  	<%= form_for @trending do |form| %>
+  	    <%= render partial: '/trendings/form', object: form %>
+  	    <br>
+  	    <div class="submit-field">
+  	      <%= form.submit "Create your trend", class: "btn btn-default"%>
+  	    </div>
+      <% end %>
+  </div>
+</div>

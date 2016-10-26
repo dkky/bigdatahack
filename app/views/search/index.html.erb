@@ -1,8 +1,10 @@
-
+<div class="search-spacer">
   <section class="result_page">
+      <h2><%= @count%> results found </h2>
+      <br>
 	<% @facility.each do |facility| %>
       <div>
-	      <div class="col-md-6" id="facility_<%= facility.id %>">
+	      <div class="" id="facility_<%= facility.id %>">
 
 	      <h4>
 	        <%= link_to facility.name, controller: "facilities", action: "show", id: facility.id%>
@@ -42,3 +44,4 @@ handler.buildMap({ provider: {}, internal: {id: 'multi_markers'}}, function(){
 });
 
 </script>
+</div>

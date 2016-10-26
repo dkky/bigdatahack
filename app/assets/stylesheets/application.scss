@@ -59,8 +59,32 @@
     padding-bottom: 10px;}
 }
 
+@media (min-width: 768px) {
+	.navbar-brand img {
+		height:75px;
+		width:130px;
+		margin-top:5px;
+		margin-left: -100px;
+	}
+}
+
+.navbar-brand img {
+	height:75px;
+	width:130px;
+	margin-top:5px;
+	margin-left: -50px;
+}
+
+.navbar-right {
+    margin-right: -50px;
+}
+
+
+
+
 $theme-pink: #ff5ab3;
 $theme-purple: #EE82EE;
 $theme-blue: #2980BB;
 $light-grey: #f4f4f4;
+$navbar-blue: #337ab7;
 

@@ -3,14 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .home-filter-wrapper--bg {
-    background-repeat: no-repeat;
-    background-position: center center;
+
     min-height: 33.75em;
     padding: 5em 0;
 }
+
+.homepage { 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("blue.png");
+    background-size: cover;
+}
     
 .temp {
-	background-image: url(assets/images/home-bg.png);
 }
 
 .content-box--lg {

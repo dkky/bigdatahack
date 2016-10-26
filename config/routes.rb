@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    collection do
+      get 'blood_pressure'
+    end
+  end
 
   get 'welcome/index'
 

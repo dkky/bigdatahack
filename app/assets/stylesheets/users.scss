@@ -7,6 +7,11 @@ $theme-purple: #d675d6;
 $theme-blue: #2980BB;
 $light-grey: #f4f4f4;
 
+.chart-title {
+	color: $theme-blue;
+	text-align: center;
+}
+
 .profile-title {
 	color: $theme-blue;
 }

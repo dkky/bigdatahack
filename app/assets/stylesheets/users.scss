@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $theme-pink: #ff5ab3;
-$theme-purple: #EE82EE;
+$theme-purple: #d675d6;
 $theme-blue: #2980BB;
 $light-grey: #f4f4f4;
 
@@ -13,4 +13,32 @@ $light-grey: #f4f4f4;
 
 .fa {
 	color: $theme-purple;
+}
+
+.profile-name {
+	color: $theme-purple;
+}
+
+.panel-spacer {
+	padding-top: 5px;
+}
+
+.small-desc {
+	font-size: 0.9em;
+}
+
+/*#popup { 
+	color: #000; 
+	background-color: #c0c0c0; 
+}
+*/
+#popup p span.small-desc {
+	display: none;
+}
+
+#popup p:hover .small-desc { 
+	background-color: $light-grey; 
+	display: block;
+	border: solid #c0c0c0 1px;
+	text-align: center;
 }

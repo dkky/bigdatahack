@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "Seeding user"
+#later
+
+puts "Seeding histories"
+
+
+puts "Seeding facilities"
+

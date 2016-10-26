@@ -6,7 +6,24 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+puts "seeding facilities"
 
+#bundle exec rake import_dental:facilities 
+
+#over query limit!
+
+puts "done seeding faci!"
+#==============
+puts "seed some users"
+
+pwd = '1234567890'
+
+User.create(name: 'Herny', email: 'herny@healthie.com', password: pwd)
+User.create(name: 'Glo', email: 'mummyglo@healthie.com', password: pwd)
+User.create(name: 'LeyYa', email: 'leyya@healthie.com', password: pwd)
+User.create(name: 'KaiYong', email: 'kaiyong@healthie.com', password: pwd)
+
+#==================
 puts "You are creating some nice trends.woohoo!"
 
 Trending.create(headline: "Fire breaks out again at Johor Baru hospital", details: "Another fire broke out at Sultanah Aminah Hospital...", latitude: 1.458556, longitude: 103.745965, stats: nil, time: "45")
@@ -20,9 +37,6 @@ number = Trending.all.count
 puts "you have created #{number} trends. Well done!"
 
 #==============
-
-puts "Seeding user"
-#later
 
 puts "Seeding histories"
 

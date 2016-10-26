@@ -10,6 +10,6 @@ class Facility < ActiveRecord::Base
   after_validation :geocode
 
   def address
-	[name, street].compact.join(',')
+	[street, district, state].compact.join(', ')
   end
 end

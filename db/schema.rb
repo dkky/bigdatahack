@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161026132245) do
+ActiveRecord::Schema.define(version: 20161026152822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,13 +54,15 @@ ActiveRecord::Schema.define(version: 20161026132245) do
   end
 
   create_table "histories", force: :cascade do |t|
-    t.float    "blood_sugar"
+    t.float    "blood_sugar_fasting"
     t.float    "cholesterol_level"
     t.float    "diastolic_blood_pressure"
     t.float    "systolic_blood_pressure"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.integer  "user_id"
+    t.float    "pulse_rate"
+    t.float    "blood_sugar_after_meal"
   end
 
   add_index "histories", ["user_id"], name: "index_histories_on_user_id", using: :btree

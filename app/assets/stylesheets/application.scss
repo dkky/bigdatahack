@@ -17,9 +17,13 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-/*@import "font-awesome";
-*/
 @import "chosen";
+
+$theme-pink: #ff5ab3;
+$theme-purple: #EE82EE;
+$theme-blue: #2980BB;
+$light-grey: #f4f4f4;
+$navbar-blue: #337ab7;
 
 .spacer {
 	padding: 30px;
@@ -57,8 +61,9 @@
     .navbar-nav > li > a {
     line-height: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;}
-}
+    padding-bottom: 10px;
+    }
+	}
 
 @media (min-width: 768px) {
 	.navbar-brand img {
@@ -91,9 +96,5 @@
 }
 
 
-$theme-pink: #ff5ab3;
-$theme-purple: #EE82EE;
-$theme-blue: #2980BB;
-$light-grey: #f4f4f4;
-$navbar-blue: #337ab7;
+
 

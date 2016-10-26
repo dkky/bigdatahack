@@ -16,6 +16,7 @@
 //= require underscore-min
 //= require gmaps/google
 //= require jquery.raty
+//= require chartkick
 //= require ratyrate
 //= require_tree .
 //= require turbolinks

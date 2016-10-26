@@ -187,13 +187,13 @@ PLATFORMS
 
 DEPENDENCIES
   active_median
-  bootstrap-sass (~> 3.3.6)
+  bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   chartkick
   chosen-rails
   coffee-rails (~> 4.1.0)
   devise
-  font-awesome-rails
+  font-awesome-rails (~> 4.7)
   geocoder
   gmaps4rails
   gon (~> 6.1)

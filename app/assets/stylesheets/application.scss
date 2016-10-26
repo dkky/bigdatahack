@@ -11,12 +11,14 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font_awesome";
+/*@import "font-awesome";
+*/
 @import "chosen";
 
 .spacer {
@@ -27,8 +29,38 @@
 	padding: 10px;
 }
 
+.awesome-icon {
+  font-family: FontAwesome;
+}
+
+.dropdown-design {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.background-nav {
+	background: white;
+}
+
+.navbar-fixed-top, {
+    min-height: 80px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
 
 $theme-pink: #ff5ab3;
 $theme-purple: #EE82EE;
 $theme-blue: #2980BB;
 $light-grey: #f4f4f4;
+

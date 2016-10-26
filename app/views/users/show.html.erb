@@ -2,8 +2,8 @@
 
 <div class="container">
   <% if current_user %>
-    <h3>My Profile</h3>
-    <h6><i><%= link_to 'Edit Profile', edit_user_registration_path %></i></h6>
+    <h3 class="profile-title">My Profile</h3>
+    <h6><%= @user.name %><i><%= link_to 'Edit Profile', edit_user_registration_path %></i></h6>
   <% else %>
     <h3>@user.name's Profile</h3>
   <% end %>
@@ -26,25 +26,37 @@
               Reputation Pts
               </span>
               <h6 class="profile-font-light"><i>Member since Oct 2016</i></h6>
-
+              <h5 class="profile-font-light">Description</h5>
             </div>
             
-            <!-- 8/12 width: -->
-            <div class="col-xs-12 col-sm-8">
-              <h2 class="profile-font-head"><%= @user.name %></h2>
-              <h5 class="profile-font-light">Description</h5>
+            <!-- 4/12 width1: -->
+            <div class="col-xs-12 col-sm-4">
+              <p class="profile-font-body"><strong><i class="fa fa-venus" aria-hidden="true"></i></strong> Female </p>
+ 			  <p class="profile-font-body"><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> grandmum@healthie.com </p>
+ 			  			<p class="profile-font-body"><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> 27 Oct 1945</p>
+              <p class="profile-font-body"><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong> Cyberjaya, Malaysia </p>
+            </div>
 
-              <p class="profile-tags-area">
-              <span class="label label-info tags">Badminton</span> 
-              <span class="label label-info tags">Board - CATAN</span> 
-              <span class="label label-info tags">Board - Bang!</span> 
-              <span class="label label-info tags">Bowling</span> 
+
+
+            <!-- 4/12 width2 -->
+            <div class="col-xs-12 col-sm-4">
+              <p class="profile-tags-area fa fa-search">
+              Recent Searchs: <br>
+              <span class="label label-default tags fa fa-tag">Kidney Failure</span> 
+              <span class="label label-default tags fa fa-tag">Dialysis</span> 
+              <span class="label label-default tags fa fa-tag">Hypertension</span> 
+              <span class="label label-default tags fa fa-tag">High Blood Pressure</span> 
+              <span class="label label-default tags fa fa-tag">diabetes</span>
+              <span class="label label-default tags fa fa-tag">Insulin</span>
+              <span class="label label-default tags fa fa-tag">osteoporosis</span>
+              
+              
+              
+
               </p>
 
-              <p class="profile-font-body"><strong><i class="fa fa-mars" aria-hidden="true"></i></strong> Female </p>
- 			  <p class="profile-font-body"><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> liren@teamup.com </p>
- 			  			<p class="profile-font-body"><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> 27 Oct 1945</p>
-              <p class="profile-font-body"><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong> PJ, Malaysia </p>
+              
             </div>
             
 

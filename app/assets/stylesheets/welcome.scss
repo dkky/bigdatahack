@@ -2,17 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.home-filter-wrapper--bg {
+$theme-purple: #d675d6 ;
 
-    min-height: 33.75em;
+
+.home-filter-wrapper--bg {
+    font-size: 20px;
     padding: 5em 0;
 }
 
 .homepage { 
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url("blue.png");
+    background-image: url("healthcare1.jpg");
     background-size: cover;
+    background-attachment:fixed;
+    height: 600px;
+    padding-bottom: 50px;
+
 }
     
 .temp {
@@ -35,9 +41,11 @@
     opacity: .65;
     box-shadow: none;
     width: 100%;
-    background-color: #f05450;
+    background-color: $theme-purple;
 	color: #fff;
 	margin-top: 10px;
+    font-size: 16px;
+
 }
 
 .words-action {
@@ -48,9 +56,6 @@
 	color: #f05450;
 }
 
-input#query{
-    font-family: FontAwesome;
-}
 
 .featured-type {
     max-width: 1200px;
@@ -74,8 +79,12 @@ input#query{
     left: 0;
     position:absolute;
     text-align:center;
-    top: 50px;
-    width: 100%
+    top: 60px;
+    width: 100%;
+}
+
+.featured-text h5 {
+    font-size:20px;
 }
 
 .featured-image:hover{
@@ -93,4 +102,13 @@ input#query{
         transition: opacity 0.6s;
        line-height:200px;   
     }
+}
+
+#featured-section {
+    padding-top: 160px;
+}
+
+.search-box {
+    position:relative;
+    padding-top: 100px;
 }

@@ -1,5 +1,5 @@
 <div class="facility-spacer container">
-		<h3 class = "profile-name"><%= @facility.name %></h3>
+		<h3 class = "profile-title"><strong><%= @facility.name %></strong></h3>
   <div class="row">
     <div class="col-md-3">
       <div class="panel panel-default">
@@ -13,21 +13,22 @@
 		            </div>
 	           </div><!--/row-->
 		              <div class="star-centre">
-			              <img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><img src="/assets/big-star.png" /><h3 class="star-centre-word"> 4.0 </h3>
+			              <img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><h3 class="star-centre-word"> 4.0 </h3>
 		              </div>
           </div><!--/panel-body-->
       </div><!--/panel panel-default-->
      </div>
+
             <div class="col-xs-12 col-sm-6">
                 <div class="panel-spacer"></div>
-                <h3 class ="profile-title"><strong>About Me</strong></h3>
-                <hr>
+                <h3><strong>Description</strong></h3>
+	                <!-- <hr> -->
                 <br>
-                <div class="panel-spacer"></div>
-	              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong>&nbsp; <%= @facility.street %></p><br>
+                <!-- <div class="panel-spacer"></div> -->
+	              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong>&nbsp; <%= @facility.address %>, 62550, Malaysia</p><br>
               <p><strong><i class="fa fa-phone" aria-hidden="true"></i></i></strong>&nbsp; <%= @facility.telephone %></p><br>
-                           <p><strong><i class="fa fa-globe" aria-hidden="true"></i></i></strong> &nbsp; <%= @facility.website %></p><br>
-                           <p><strong><i class="fa fa-bed" aria-hidden="true"></i></strong> &nbsp; 10/360 beds available </p><br>
+                           <p><strong><i class="fa fa-globe" aria-hidden="true"></i></i></strong> &nbsp; <a href= "<%= @facility.website %>"> <%= @facility.website %> </a></p><br>
+                           <p><strong><i class="fa fa-bed" aria-hidden="true"></i></strong> &nbsp; 25/360 beds available </p><br>
             </div>
 			<div class="col-xs-12 col-sm-3 review-form">
 				<div class="panel panel-default">
@@ -61,11 +62,13 @@
 		    </div>
 	    </div><!-- div class col-md-12-->
     </div><!-- div class row -->
+    
     <div class="row">
-	  <div class="col-md-1"></div>
-  	        <div class="col-xs-12 col-sm-3" >
+  	        <div class="col-sm-3" >
 			    <div class="map-style" id="map" style='width: 250px; height: 250px;'></div>
 			</div>
+				  <!-- <div class="col-md-1"></div> -->
+
 			 <div class="col-xs-12 col-sm-5 service-div">
 			 	<p><strong><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp; Specialty:</strong> </p><br>
 			 	<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Endocrine surgery</p><br>
@@ -83,7 +86,7 @@
 
 
 <div class="container spacer">	
-	<div class="container">
+	<div class="container-fluid">
 		<script type="text/javascript">
 			handler = Gmaps.build('Google');
 			handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
@@ -105,7 +108,7 @@
 
 	      <br><br><strong><h4>Reviews from patients:</h4></strong>
 	      <% @facility.reviews.order('created_at DESC').each do |review| %>
-	        <div class="container"><br>
+	        <div class="container-fluid"><br>
 	          <div class="rate-result">
 	            <div id="stars_<%= review.id %>"></div><br>
 	              <strong>Hospital: </strong> <%= review.facility_name %><br>

@@ -1,28 +1,10 @@
-== README
+== 48 Hours Open Data Hackathon organized by data.gov.my
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app, "Healthie" built by Team Minion using data from data.gov.my, Ministry of Health and other relevant sources for the 48 hours open data hackathon.
 
-Things you may want to cover:
+App features include:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Search engine to locate health services with geolocation
+2. Profile of each health service and user ratings/reviews
+3. "Healthie diary" for users to record and track vital health statistics
+4. Trending topics for users to keep up to date with current health issues/campaigns/etc

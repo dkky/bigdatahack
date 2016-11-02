@@ -1,6 +1,6 @@
 == 48 Hours Open Data Hackathon organized by data.gov.my
 
-This app, "Healthie" built by Team Minion using data from data.gov.my, Ministry of Health and other relevant sources for the 48 hours open data hackathon.
+This app, "Healthie", was built by Team Minion using data from data.gov.my, Ministry of Health and other relevant sources for the 48 hours open data hackathon held on 25 - 27 November 2016.
 
 App features include:
 

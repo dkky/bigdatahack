@@ -11,5 +11,5 @@ App features include:
 
 === To seed database:
 1. Comment out geocoder in models/facility.rb
-2. Run `bundle exec rake import_dental:facilities`
-3. Run `bundle exec rake db:seed`
+2. Run ``` bundle exec rake import_dental:facilities
+3. Run ``` bundle exec rake db:seed

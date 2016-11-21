@@ -57,7 +57,7 @@ $navbar-blue: #337ab7;
     line-height: 80px;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .navbar-nav > li > a {
     line-height: 20px;
     padding-top: 10px;
@@ -70,12 +70,12 @@ $navbar-blue: #337ab7;
 		width:130px;
 		margin-top:5px;
 		/*margin-left: -100px;*/
-	}
-}
+	/*}*/
+/*}*/
 
 .navbar-brand img {
-	height:60px;
-	width:130px;
+	height:50px;
+	width:180px;
 	margin-top:5px;
 	/*margin-left: -50px;*/
 	opacity: 0.9;

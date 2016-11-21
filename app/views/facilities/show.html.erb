@@ -9,11 +9,11 @@
 		            <!-- 4/12 width: -->
 		            <div class="col-xs-12 col-sm-4 text-center">
 		                   <div class="panel-spacer"></div>
-		              <img src="/assets/hospital-putrajaya.jpg", alt="profile-picture", class=""  height="200px", width="230px">
+		              <img src="/assets/hospital-icon-1.png" alt="profile-picture" class="hospital-icon">
 		            </div>
 	           </div><!--/row-->
 		              <div class="star-centre">
-			              <img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><img src="/assets/mid-star.png" /><h3 class="star-centre-word"> 4.0 </h3>
+			              <h4 class="star-centre-word"> No ratings yet </h4>
 		              </div>
           </div><!--/panel-body-->
       </div><!--/panel panel-default-->
@@ -25,10 +25,10 @@
 	                <!-- <hr> -->
                 <br>
                 <!-- <div class="panel-spacer"></div> -->
-	              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong>&nbsp; <%= @facility.address %>, 62550, Malaysia</p><br>
+	              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong>&nbsp; <%= @facility.address %></p><br>
               <p><strong><i class="fa fa-phone" aria-hidden="true"></i></i></strong>&nbsp; <%= @facility.telephone %></p><br>
                            <p><strong><i class="fa fa-globe" aria-hidden="true"></i></i></strong> &nbsp; <a href= "<%= @facility.website %>"> <%= @facility.website %> </a></p><br>
-                           <p><strong><i class="fa fa-bed" aria-hidden="true"></i></strong> &nbsp; 25/360 beds available </p><br>
+                           <p><strong><i class="fa fa-bed" aria-hidden="true"></i></strong> &nbsp; <%= @facility.bed_no %> beds </p><br>
             </div>
 			<div class="col-xs-12 col-sm-3 review-form">
 				<div class="panel panel-default">
@@ -37,8 +37,7 @@
     
 					        <%= form_for @review, :html => {:id => "review_form"} do |form| %>
 					        <div class="text-field">
-					          <%= form.label :"Hospital's Name" %>
-					          <%= form.text_field :facility_name, type: 'text', :required => true, class: 'form-control' %>
+					          
 					          <%= form.label :"Doctor's Name" %>
 					          <%= form.text_field :doctor_name, type: 'text', :required => true, class: 'form-control' %>
 					        </div>
@@ -50,8 +49,7 @@
 					          <%= form.text_area :comment, type: 'text', :required => true, class: 'form-control' %>
 					        </div>
 					        <%= hidden_field_tag(:facility_id, @facility.id)%>
-					        <%= hidden_field_tag(:user_id, current_user.id)%>
-
+					   
 
 
 					        <%= form.submit "Submit Review", class: "btn btn-primary" %>
@@ -71,9 +69,6 @@
 
 			 <div class="col-xs-12 col-sm-5 service-div">
 			 	<p><strong><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp; Specialty:</strong> </p><br>
-			 	<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Endocrine surgery</p><br>
-			 	<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Argon and YAG laser</p><br>
-				<p>&nbsp; <i class="fa fa-plus-square" aria-hidden="true"></i> Audiometry testing</p>
 			</div>
 
 
@@ -111,9 +106,9 @@
 	        <div class="container-fluid"><br>
 	          <div class="rate-result">
 	            <div id="stars_<%= review.id %>"></div><br>
-	              <strong>Hospital: </strong> <%= review.facility_name %><br>
 	              <strong>Doctor: </strong> <%= review.doctor_name %><br>
-	              <p>Reviewed By: <%= review.user.name %></p> 
+	              <p>Reviewed By: <%= review.user.name %></p>
+	              <p>Date: <%= review.created_at %></p> 
 	              <h4><em>"<%= review.comment %>"</em><h4>
 	          </div>
 	        </div>

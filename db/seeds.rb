@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-puts "seeding facilities"
+#puts "seeding facilities"
 
 #bundle exec rake import_dental:facilities 
 
@@ -60,6 +60,9 @@ History.create(user_id: 2, blood_sugar_fasting: 4.7, blood_sugar_after_meal: 6.2
 
 History.create(user_id: 2, blood_sugar_fasting: 6.2, blood_sugar_after_meal: 9.9, systolic_blood_pressure: 120.0, diastolic_blood_pressure: 70.0, pulse_rate: 80.0, created_at: DateTime.now)
 
+#------------------------
+puts "Seed Hospital Putrajaya"
+f = Facility.where(name: "HOSPITAL PUTRAJAYA").first
+f.update_attributes(street: "Presint 7", district: "Putrajaya", state: "WP Putrajaya", longitude: 101.673299, latitude: 2.929623, telephone: "+603-83124200", fax: nil, website: "http://www.hpj.gov.my/", facility_type: "Hospital", bed_no: 341) 
 
 puts "Seeding done!"
-

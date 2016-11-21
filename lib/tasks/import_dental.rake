@@ -1,10 +1,10 @@
 namespace :import_dental do 
 
-	# desc "Import dental clinics from csv"
+	desc "Import dental clinics from csv"
 	# puts "import dental clinics"
-	# task facilities: :environment do
+	task facilities: :environment do
 	# 	filename = File.join Rails.root, "clinicdental.csv"
-	# 	counter = 0
+		counter = 0
 
 	# 	CSV.foreach(filename, headers: true) do |row|
 	# 	facility = Facility.create!(state: row[1], name: row[2], street: row[3], city: row[4], website: row[5], telephone: row[7], facility_type: row[15])
@@ -26,3 +26,5 @@ namespace :import_dental do
 	end
 
 end
+
+#remove to comment out geocoder in facility model

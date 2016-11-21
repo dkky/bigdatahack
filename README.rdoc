@@ -10,9 +10,6 @@ App features include:
 4. Trending topics for users to keep up to date with current health issues/campaigns/etc
 
 === To seed database:
-1. Facility Seeding
-a. comment out geocoder in models/facility.rb
-b. Run `bundle exec rake import_dental:facilities`
-
-2. User seeding
-Run `bundle exec rake db:seed`
+1. Comment out geocoder in models/facility.rb
+2. Run `bundle exec rake import_dental:facilities`
+3. Run `bundle exec rake db:seed`

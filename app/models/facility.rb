@@ -6,8 +6,8 @@ class Facility < ActiveRecord::Base
   pg_search_scope :search, against: [:name, :street, :state]
 
 
-  # geocoded_by :address
-  # after_validation :geocode
+  geocoded_by :address
+  after_validation :geocode
 
   def address
 	[street, district, state].compact.join(', ')

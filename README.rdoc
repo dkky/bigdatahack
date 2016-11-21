@@ -8,3 +8,8 @@ App features include:
 2. Profile of each health service and user ratings/reviews
 3. "Healthie diary" for users to record and track vital health statistics
 4. Trending topics for users to keep up to date with current health issues/campaigns/etc
+
+=== To seed database:
+1. Comment out geocoder in models/facility.rb
+2. Run bundle exec rake import_dental:facilities
+3. Run bundle exec rake db:seed

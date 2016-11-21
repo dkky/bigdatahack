@@ -1,0 +1,144 @@
+<section>
+<div class = "spacer homepage"> 
+	<div class="home-filter-wrapper home-filter-wrapper--bg">
+		<div class="search-box">
+			<br><br><br><br><br>
+			<article class="content-box content-box--lg content-box__space--xxl">
+				<header>
+					<h2 class="text-danger text-lg text-center">Find Healthcare Facilities</h2>
+				</header>
+					<div name="findDoctorForm" class="ng-pristine ng-valid ng-valid-date"><div class="input__group">
+						<div class="select-group__input-wrapper">
+							<form action="/search" method="get"><input  type="hidden">
+							    <input type="text" name="query" id="query" class="form-control text-field text-field--sm awesome-icon" placeholder="&#xF002;  Public Clinics, Private Clinics, Hospitals, etc.">
+							    <input type="submit" value="Search" class="btn btn-search home-search">
+							</form>
+						</div>
+
+							<h3 class="words-action">The <a href="#" class="join-now">#1</a>&nbsp;Platform for you to Enjoy Better Access & Data in Healthcare</h3>
+			</article>
+		</div>
+	</div>
+</section>
+
+
+<section class="featured-type" id="featured-section">
+	<div class="text-center size-of-font"><h1>Type of Facilities</h1><hr class="underline"></div>
+		<div class="jobs">
+			<div class="job-scroll">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/1malaysia.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Klinik 1 Malaysia</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>				
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/klinik-desa.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Klinik Desa</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>				
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/klinik-kesihatan.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Klinik Kesihatan</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/dental-clinic.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Klinik Pergigian</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>		
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/hospital.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Private Hospital</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>		
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/lab.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Public Hospital</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>				
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/1malaysia.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Private Clinic</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>				
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<div class="featured-image">
+						<a class="job-link" href="#"><img class="img-settings" src="assets/1malaysia.jpg" alt="Hospital">
+							<div class="featured-overlay">
+								<div class="featured-text">
+									<h5>Health Screening</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+ 	 <div class= container-fluid>
+    	 <div class="col-lg-12 text-center">
+	        <h2 class="section-heading" > Medical Facilities Around You</h2><hr class="underline">
+	     </div>
+	 </div>
+	  	<div id="map" style='width: 100%; height: 400px;'></div>
+</section>
+
+
+
+<script type="text/javascript">
+	handler = Gmaps.build('Google');
+	handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+	  markers = handler.addMarkers(<%=raw @hash.to_json %>)
+	  handler.bounds.extendWith(markers);
+	  handler.fitMapToBounds();
+	  handler.getMap().setZoom(10);
+	});	
+</script>
+
+</div>
+

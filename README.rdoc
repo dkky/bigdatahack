@@ -11,6 +11,8 @@ App features include:
 
 === To seed database:
 1. Facility Seeding
-*comment out geocoder in models/facility.rb
+a. comment out geocoder in models/facility.rb
+b. Run `bundle exec rake import_dental:facilities`
 
-2. Run <bundle exec rake db:seed>
+2. User seeding
+Run `bundle exec rake db:seed`

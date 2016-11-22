@@ -73,3 +73,9 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+    # Heroku
+    # ==================
+    gem 'rails_12factor' # Heroku Gem Supports
+    gem 'unicorn'
+end

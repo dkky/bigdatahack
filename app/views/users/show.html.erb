@@ -21,7 +21,8 @@
 	        <!-- 4/12 width: -->
 	        <div class="col-xs-12 col-sm-4 text-center">
 	       		<div class="panel-spacer"></div>
-              <img src="/assets/no-avatar.jpg", alt="profile-picture", class="center-block img-circle img-responsive" height="110px", width="110px">
+              <%= image_tag "no-avatar.jpg", alt="profile-picture", class = "center-block img-circle img-responsive", height="110px", width="110px" %>
+
 	          	<h3 class = "profile-name"><%= @user.name %></h3>
               <!-- <h6><i>Member since Oct 2016</i></h6> -->
             </div>

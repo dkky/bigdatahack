@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$theme-purple: #d675d6 ;
+$theme-purple: #3C85F4;
 
 
 .home-filter-wrapper--bg {
@@ -13,10 +13,10 @@ $theme-purple: #d675d6 ;
 .homepage { 
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: image-url("healthcare1.jpg");
+    background-image: image-url("index.jpeg");
     background-size: cover;
     background-attachment:fixed;
-    height: 600px;
+    height: 500px;
     padding-bottom: 50px;
 
 }

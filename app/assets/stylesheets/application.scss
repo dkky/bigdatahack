@@ -20,17 +20,29 @@
 @import "chosen";
 
 $theme-pink: #ff5ab3;
-$theme-purple: #EE82EE;
+/*$theme-pink: #3C85F4;*/
+$theme-purple: #3C85F4;
+/*$theme-purple: #EE82EE;*/
 $theme-blue: #2980BB;
 $light-grey: #f4f4f4;
 $navbar-blue: #337ab7;
+
+.text-danger {
+	color: $theme-purple;
+}
+
+#company-logo {
+	margin-top: 15px;
+	height: 50px;
+	width: 190px;
+}
 
 .spacer {
 	padding: 30px;
 }
 
 .row-spacer {
-	padding: 10px;
+	padding: 5px;
 }
 
 .awesome-icon {

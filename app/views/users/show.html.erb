@@ -13,75 +13,115 @@
 
 <div class="container-fluid">
   <div class="row">
-	<div class="col-md-12">
-	  <div class="panel panel-default">
-	  	<div class="panel-body">
-		  <div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      <div class="row">
 
-	        <!-- 4/12 width: -->
-	        <div class="col-xs-12 col-sm-4 text-center">
-	       		<div class="panel-spacer"></div>
-              <%= image_tag "no-avatar.jpg", alt="profile-picture", class = "center-block img-circle img-responsive", height="110px", width="110px" %>
-
-	          	<h3 class = "profile-name"><%= @user.name %></h3>
-              <!-- <h6><i>Member since Oct 2016</i></h6> -->
+          <!-- 4/12 width: -->
+          <div class="col-xs-12 col-sm-4 text-center">
+            <div class="panel-spacer"></div>
+              <img src="/assets/profile-pic-lady.png", alt="profile-picture", class="center-block img-circle img-responsive" height="110px", width="110px">
+              <h3 class = "profile-name"><%= @user.name %></h3>
+              <h6><i>Member since Oct 2016</i></h6>
             </div>
             
             <!-- 4/12 width1: -->
             <div class="col-xs-12 col-sm-3">
-            	<div class="panel-spacer"></div>
-            	<h4 class ="profile-title"><strong>Personal Details</strong></h4>
-            	<div class="panel-spacer"></div>
- 			  			<p><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> &nbsp; <%= @user.email %> </p>
- 			  			<p><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> &nbsp; 36 </p>
+              <div class="panel-spacer"></div>
+              <h4 class ="profile-title"><strong>Personal Details</strong></h4>
+              <div class="panel-spacer"></div>
+              <p><strong><i class="fa fa-venus" aria-hidden="true"></i></strong> &nbsp; Female </p>
+              <p><strong><i class="fa fa-envelope" aria-hidden="true"></i></strong> &nbsp; mummyglo@healthie.com </p>
+              <p><strong><i class="fa fa-birthday-cake" aria-hidden="true"></i></strong> &nbsp; 36 </p>
               <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i></strong> &nbsp; Cheras, Malaysia </p>
 
               <div class = "row"></div>
 
               <h6 class="profile-title"><strong>Recent Searches:</strong></h6> 
-              <!-- <span class="label label-default tags fa fa-tag">glucose level</span>  -->
-              <!-- <span class="label label-default tags fa fa-tag">nadi</span>  -->
-              <!-- <span class="label label-default tags fa fa-tag">gynae</span>  -->
+              <span class="label label-default tags fa fa-tag">glucose level</span> 
+              <span class="label label-default tags fa fa-tag">nadi</span> 
+              <span class="label label-default tags fa fa-tag">gynae</span> 
 
             </div>
 
             <!-- 4/12 width2 -->
             <div class="col-xs-12 col-sm-3">
-            	<div class="panel-spacer"></div>
-	           	<h4 class ="profile-title"><strong>Health Statistics</strong></h4>
-              <p><strong class="profile-name">Height:</strong>  </p>
- 			  			<p><strong class = "profile-name">Weight:</strong>  </p>
- 			  			
- 			  			<div id = "popup">
- 			  				<p><strong class="profile-name">BMI:</strong> 
- 			  			</div>
+              <div class="panel-spacer"></div>
+              <h4 class ="profile-title"><strong>Health Statistics</strong></h4>
+              <p><strong class="profile-name">Height:</strong> 162 cm </p>
+              <p><strong class = "profile-name">Weight:</strong> 72 kg </p>
+              
+              <div id = "popup">
+                <p><strong class="profile-name">BMI:</strong> 27.4 kg/m<sup>2</sup>
+                <span class = "small-desc">(Recommended weight range when delivering (40th week): 78.8 - 83.3 kg)</span></p>
+              </div>
 
-	      		  <div class = "row">
-	 			     	  <div class = "col-xs-12 col-sm-4"></div>
- 			    	 	  <!-- <span class = "small-desc"><i><a href = "">More statistics</a></i></span> -->
-    	  	  	</div>
+              <div class = "row">
+                <div class = "col-xs-12 col-sm-4"></div>
+                <span class = "small-desc"><i><a href = "">More statistics</a></i></span>
+              </div>
             </div>                        
-      	  </div><!--/row-->
+          </div><!--/row-->
 
 
 
         </div><!--/panel-body-->
       </div><!--/panel panel-default-->
-		</div><!-- div class col-md-12-->
-	</div><!-- div class row -->
+    </div><!-- div class col-md-12-->
+  </div><!-- div class row -->
 
-	<div class="container-fluid row">
-		<div class="col-md-12" >
-		  <div class="panel panel-default">
-		  	<div class="panel-body">
-			  	<div class="row">
-            <h3 class = "chart-title" >Blood Pressure Tracker</h3>
+  <div class="row">
+    <div class="col-md-12" >
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            
+            <div class = "row">
+              <h3 class = "chart-title">Blood Glucose Level Tracker</h3>
+             
+              <div class = "col-xs-8">
+              <%= line_chart [
+                {name: "After Meal", data: @blood_sugar_after_meal },
+                { name: "Fasting", data: @blood_sugar_fasting }
+              ], {width: "700px", library: { curveType: "none"} }  %>
+             </div>
+
+              <div class="panel-spacer"></div>
+              <div class="panel-spacer"></div>
+              <div class="panel-spacer"></div>
+              <div class="panel-spacer"></div>
+
+              <div class = "col-xs-4">
+              <form>
+                <div class="bfh-datepicker"></div> 
+                <div class="form-group">
+                  <label for="email">Date:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Blood sugar level after 2-hour fast:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              <div class="form-group">
+                <label for="pwd">Blood sugar level after meal:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary">Update</button>
+              </form>
+            </div>
+            </div>
+
+
+<h3 class = "chart-title" >Blood Pressure Tracker</h3>
             <div class="col-xs-8">
               <%= line_chart [
                 { name: "Pulse Rate", data: @pulse_rate },
                 {name: "Systolic Blood Pressure", data: @systolic },
                 {name: "Diastolic Blood Pressure", data: @diastolic }
-              ], {width: "100%", library: { curveType: "none"} }  %>
+              ], {width: "700px", library: { curveType: "none"} }  %>
             </div>
           
             <div class = "col-xs-4">
@@ -122,60 +162,24 @@
             <div class="panel-spacer"></div>
             <div class="panel-spacer"></div>
 
-            <div class = "row">
-              <h3 class = "chart-title">Blood Glucose Level Tracker</h3>
-             
-              <div class = "col-xs-8">
-              <%= line_chart [
-                {name: "After Meal", data: @blood_sugar_after_meal },
-                { name: "Fasting", data: @blood_sugar_fasting }
-              ], {width: "100%", library: { curveType: "none"} }  %>
-             </div>
-
-              <div class="panel-spacer"></div>
-              <div class="panel-spacer"></div>
-              <div class="panel-spacer"></div>
-              <div class="panel-spacer"></div>
-
-              <div class = "col-xs-4">
-              <form>
-                <div class="bfh-datepicker"></div> 
-                <div class="form-group">
-                  <label for="email">Date:</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Blood sugar level after 2-hour fast:</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-              <div class="form-group">
-                <label for="pwd">Blood sugar level after meal:</label>
-                <input type="password" class="form-control" id="pwd">
-              </div>
-
-              <button id="singlebutton" name="singlebutton" class="btn btn-primary">Update</button>
-              </form>
-            </div>
-            </div>
 
 
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-<!-- 	<div class="row">
-		<div class="col-md-12">
-	  	<div class="panel panel-default">
-	  		<div class="panel-body">
-		  		<div class="row">
+<!--  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
           Upcoming Appointments | Past Appointments
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> -->
 
 

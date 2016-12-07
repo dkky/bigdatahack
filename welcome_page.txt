@@ -14,8 +14,9 @@
 							    <input type="submit" value="Search" class="btn btn-search home-search">
 							</form>
 						</div>
-
-							<h3 class="words-action">The <a href="#" class="join-now">#1</a>&nbsp;Platform for you to Enjoy Better Access & Data in Healthcare</h3>
+						<h3 class="word-action">Your Personal Heathcare Assistant</h3>
+<!-- 
+							<h3 class="words-action">The <a href="#" class="join-now">#1</a>&nbsp;Platform for you to Enjoy Better Access & Data in Healthcare</h3> -->
 			</article>
 		</div>
 	</div>
